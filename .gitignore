@@ -6,3 +6,4 @@ data/
 results/clustered_otu_tables/
 results/clustered_otu_dists/
 results/clustered_otu_unifrac/
+*.tar.gz
