@@ -1,42 +1,42 @@
-\begin{tabular}{rrccccccc}
+\begin{tabular}{rrcccccccc}
 \toprule
-& & & \multicolumn{5}{c}{Embedding} \\
-Dataset& Task& \#Samples& Raw& Random &  PCA$_{128}$& $\mathcal{H}_{128}$& $\mathcal{E}_{128}$& DNABERT-S\\
+& & \multicolumn{7}{c}{Embedding} \\
+Dataset& Task& \#Samples& Raw& Random & Random Mix &  PCA$_{128}$& $\mathcal{H}_{128}$& $\mathcal{E}_{128}$& DNABERT-S\\
 \midrule
 \multirow{4}{*}{cho}
-& control-ct-cecal & 17 & \textbf{1.000} & 0.350 & 0.900 & 0.850 & 0.875 & \textbf{1.000} \\
-& control-ct-fecal & 18 & \textbf{1.000} & 0.200 & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} \\
-& penicillin-vancomycin-cecal & 20 & \textbf{1.000} & 0.325 & 0.800 & 0.900 & 0.900 & 0.950 \\
-& penicillin-vancomycin-fecal & 19 & \textbf{0.950} & 0.900 & 0.450 & 0.800 & 0.750 & 0.900 \\
+& control-ct-cecal & 17 & \textbf{1.00} & 0.68 & \textbf{1.00} & 0.80 & 0.85 & 0.85 & \textbf{1.00} \\
+& control-ct-fecal & 18 & \textbf{1.00} & 0.47 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+& penicillin-vancomycin-cecal & 20 & \textbf{1.00} & 0.38 & 0.95 & 0.75 & 0.90 & 0.90 & 0.95 \\
+& penicillin-vancomycin-fecal & 19 & \textbf{1.00} & 0.80 & 0.85 & 0.53 & 0.80 & 0.80 & 0.90 \\
 \midrule
 \multirow{2}{*}{gevers}
-& ileum & 140 & \textbf{0.821} & 0.422 & 0.771 & 0.769 & 0.770 & 0.749 \\
-& rectum & 160 & \textbf{0.848} & 0.528 & 0.795 & 0.760 & 0.787 & 0.738 \\
+& ileum & 140 & \textbf{0.82} & 0.35 & 0.77 & 0.78 & 0.73 & 0.73 & 0.73 \\
+& rectum & 160 & \textbf{0.83} & 0.38 & 0.71 & 0.76 & 0.77 & 0.76 & 0.71 \\
 \midrule
 \multirow{4}{*}{hmp}
-& gastro-oral & 2070 & \textbf{1.000} & 0.465 & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & 1.000 \\
-& sex & 180 & \textbf{0.657} & 0.487 & 0.597 & 0.650 & 0.595 & 0.577 \\
-& stool-tongue-paired & 404 & \textbf{1.000} & 0.523 & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} \\
-& sub-supragingivalplaque-paired & 408 & \textbf{0.838} & 0.496 & 0.759 & 0.745 & 0.762 & 0.761 \\
+& gastro-oral & 2070 & \textbf{1.00} & 0.49 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+& sex & 180 & \textbf{0.63} & 0.42 & 0.47 & 0.56 & 0.61 & \textbf{0.63} & 0.51 \\
+& stool-tongue-paired & 404 & \textbf{1.00} & 0.51 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+& sub-supragingivalplaque-paired & 408 & \textbf{0.84} & 0.47 & 0.77 & 0.77 & 0.75 & 0.76 & 0.76 \\
 \midrule
 \multirow{3}{*}{ravel}
-& black-hispanic & 199 & \textbf{0.642} & 0.470 & 0.522 & 0.535 & 0.547 & 0.524 \\
-& nugent-category & 342 & 0.981 & 0.479 & 0.972 & \textbf{0.981} & 0.981 & 0.976 \\
-& white-black & 200 & \textbf{0.666} & 0.566 & 0.603 & 0.628 & 0.641 & 0.636 \\
+& black-hispanic & 199 & \textbf{0.64} & 0.37 & 0.53 & 0.53 & 0.56 & 0.54 & 0.52 \\
+& nugent-category & 342 & \textbf{0.98} & 0.43 & \textbf{0.97} & \textbf{0.98} & \textbf{0.98} & \textbf{0.98} & \textbf{0.98} \\
+& white-black & 200 & \textbf{0.67} & 0.50 & 0.61 & 0.59 & 0.64 & 0.62 & 0.64 \\
 \midrule
 \multirow{2}{*}{sokol}
-& healthy-cd & 74 & \textbf{0.866} & 0.406 & 0.616 & 0.708 & 0.656 & 0.673 \\
-& healthy-uc & 59 & \textbf{0.870} & 0.631 & 0.632 & 0.704 & 0.681 & 0.703 \\
+& healthy-cd & 74 & \textbf{0.91} & 0.45 & 0.56 & 0.65 & 0.65 & 0.66 & 0.65 \\
+& healthy-uc & 59 & \textbf{0.88} & 0.50 & 0.62 & 0.66 & 0.67 & 0.74 & 0.71 \\
 \midrule
 \multirow{1}{*}{turnbaugh}
-& obese-lean-all & 142 & \textbf{0.786} & 0.630 & 0.622 & 0.620 & 0.620 & 0.631 \\
+& obese-lean-all & 142 & \textbf{0.78} & 0.41 & 0.63 & 0.61 & 0.65 & 0.60 & 0.61 \\
 \midrule
 \multirow{3}{*}{yatsunenko}
-& malawi-venezuela & 54 & \textbf{1.000} & 0.344 & 0.874 & 0.779 & 0.800 & 0.867 \\
-& sex & 129 & \textbf{0.611} & 0.412 & 0.427 & 0.525 & 0.455 & 0.455 \\
-& usa-malawi & 150 & \textbf{1.000} & 0.544 & \textbf{1.000} & 0.987 & 0.996 & 0.998 \\
+& malawi-venezuela & 54 & \textbf{1.00} & 0.41 & 0.79 & 0.85 & 0.82 & 0.82 & 0.80 \\
+& sex & 129 & \textbf{0.65} & 0.60 & 0.44 & 0.41 & 0.53 & 0.46 & 0.46 \\
+& usa-malawi & 150 & \textbf{1.00} & 0.49 & \textbf{1.00} & \textbf{1.00} & 0.99 & \textbf{0.99} & \textbf{1.00} \\
 \midrule
-\multicolumn{3}{r}{Averages:} & \textbf{0.870}& 0.483& 0.755& 0.786& 0.780& 0.797\\
-\multicolumn{3}{r}{Top scores:} & \textbf{18}& 0& 4& 4& 3& 3\\
+\multicolumn{3}{r}{Averages:} & \textbf{0.87}& 0.48& 0.77& 0.75& 0.78& 0.78& 0.79\\
+\multicolumn{3}{r}{Top scores:} & \textbf{18}& 0& 3& 4& 3& 3& 3\\
 \bottomrule
 \end{tabular}
